@@ -1,5 +1,5 @@
 
-body {
+.index {
     animation-duration: 4s;
     animation-name: aparecer;
     background-image: url(../Recursos/Imagenes/nico_celular.jpg);
@@ -11,7 +11,7 @@ body {
 }
 
 @media (min-width: 700px) {
-    body {
+    .index {
         background-image: url(../Recursos/Imagenes/nico_recortado2.jpg);
         background-repeat: no-repeat;
         background-size: cover;
@@ -21,6 +21,8 @@ body {
 
     }
 }
+
+
 
 a {
     text-decoration :none
@@ -71,6 +73,7 @@ align-items: center;
 .AREA { 
   
     margin-top: 50px;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -95,8 +98,7 @@ align-items: center;
 
 
 .FOOTER { 
-    position: absolute;
-    bottom: 0;
+
     
     color: aliceblue; 
     display: flex;
@@ -120,6 +122,8 @@ align-items: center;
 }
 
 .parrafo_footer {
+    margin: 20px;
+    padding: 10px;
     animation-name: aparecer;     
 }
 
@@ -131,9 +135,54 @@ align-items: center;
     opacity: 1;
     }
    }
+/* composiciones */
+
+   .composicion {
+    background-color: rgb(28, 26, 27);
+    font-family: 'Oswald', sans-serif;
+    height: 100vh ;
+    font-size: 20px;
+}
+
+.frame {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80vh;
 
 
+}
 
+.video1 {
+    
+    display: flex;      
+    width: 80vh;
+}
 
+.contenedor {
+    color: rgb(70, 77, 83);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.titulos_proyectos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
+    margin: 30px;
+
+}
+
+@media (max-width: 600px) {
+    .frame {
+        width: 40vh;
+        }
+    .video1 {
+        width: 40vh;
+    }
+}
